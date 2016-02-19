@@ -7,7 +7,7 @@ def satisfiesF(L):
             should be in the same order.
     Returns the length of L after mutation
     """
-    for char in L[:]:
+    for char in L[:]: #runs through copy of list so as not to skip place of char removed
         if f(char) == False:
             L.remove(char)
     return len(L)
