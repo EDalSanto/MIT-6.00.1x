@@ -252,5 +252,8 @@ print 'Expected Output:', (24, 'hello')
 print 'Actual Output:', ciphertext.decrypt_message()
 
 def decrypt_story():
+    """
+    loads story from story.txt document, turns into an instance of class CipherTextMessage and decrypts story
+    """
     story_string = CiphertextMessage(get_story_string())
     return story_string.decrypt_message()
