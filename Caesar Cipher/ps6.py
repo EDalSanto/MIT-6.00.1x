@@ -34,9 +34,9 @@ def is_word(word_list, word):
     Returns: True if word is in word_list, False otherwise
 
     Example:
-    >>> is_word(word_list, 'bat') returns
+    is_word(word_list, 'bat') returns
     True
-    >>> is_word(word_list, 'asdf') returns
+    is_word(word_list, 'asdf') returns
     False
     '''
     word = word.lower()
