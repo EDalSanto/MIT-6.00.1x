@@ -208,8 +208,8 @@ def get_adopters_for_advertisement(adoption_center, list_of_adopters, n):
         top_n_adopters.append(elm[0]) #append adopter to final list of best adopters by score, sorted alphabetically
     return top_n_adopters[:n] #return final list of top adopters to nth one desired
         
-
-  
+"""
+Example: 
 ac = AdoptionCenter('b e', {'Dog': 8, 'Cat': 17,'Tiger':11,'Hourse':5,'Dog2': 11, 'Cat2': 17,'Tiger2':11,'Hourse2':5,'fish':17}, (1,0))
 
 ad = [Adopter('jack v','Tiger'),Adopter('Dode v','Cat'),Adopter('jack r','Tiger'),Adopter('jack e3','Tiger'),Adopter('jack e','Cat2'),
@@ -219,5 +219,8 @@ SluggishAdopter("Five","Cat", (1,2)),SluggishAdopter("Five","Cat", (3,2)),
 Adopter('jack t','fish')]
 
 get_adopters_for_advertisement(ac,ad,5) #test for top 5 adopters
+returns: ['Dode v', 'jack e', 'jack t', 'jack t', 'jack t']
+
 #The name of the adopter result should looks like below :
 #Dode v  -  jack e  -  jack t  -  jack t  -  jack t  -  Five  -  Five  -  jack a  -  jack e3  -  jack r  -  jack v  -  Gifaffe v  -  jack w 
+"""
