@@ -37,13 +37,13 @@ in L is [3, 4, 5, 7, 7].
 My function creates a list of sublists for i ranging from the length of the list L 
 down to 0.
 It then loops through those lists and checks to see if any of those lists are monotonic.
-If so, the function returns the current value of i.
+If so, the function returns the current value of i, the Longest Run.
 """
 
 def longestRun(L):
 	for i in range(len(L),0,-1): 	
 		for list in getSublists(L,i): 
-			if all(x<=y for x, y in zip(list, list[1:])) == True:
+			if all(x<=y for x, y in zip(list, list[1:])) == True: #checks to see if list is monotonic
 				return i
 		
 
