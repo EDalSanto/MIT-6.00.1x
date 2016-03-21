@@ -1,4 +1,4 @@
-## DO NOT MODIFY THE IMPLEMENTATION OF THE Person CLASS ##
+
 class Person(object):
     def __init__(self, name):
         #create a person with name name
