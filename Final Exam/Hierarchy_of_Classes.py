@@ -1,8 +1,5 @@
 """       
-As written, this code leads to an infinite loop when using the Arrogant Professor class.
-
-Change the definition of ArrogantProfessor so that the following behavior is achieved:
-
+Fun exerise that explored knowledge of classes
 """
 
 class Person(object):     
@@ -40,12 +37,6 @@ print ae.say("the sky is blue")
 print pe.say("the sky is blue")
 
 """
->>> ae.say("the sky is blue")
-eric says: It is obvious that I believe that eric says: the sky is blue
-
->>> ae.lecture("the sky is blue")
-It is obvious that I believe that eric says: the sky is blue
-
 >>> pe.say("the sky is blue")
 Prof. eric says: I believe that eric says: the sky is blue 
 
